@@ -64,7 +64,7 @@ class apiZabbix:
 
     #cria csv
     def csvCreated(self):
-        writer = csv.writer(open("host2.csv", "w"))
+        writer = csv.writer(open("host.csv", "w"))
 
         #grava informacoes no arquivo criado
         for result1 in self.zapi.host.get(output = 'extend'):
